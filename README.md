@@ -1,2 +1,24 @@
-# google-cybersecurity-cert
-Documentation and labs from the Google Cybersecurity Professional Certificate.
+# Google Cybersecurity Professional 
+
+This repository documents my progress through the **Google Cybersecurity Professional Certificate** on Coursera.  
+It includes summaries, lab notes, and hands on exercises for each course.
+
+---
+
+## Structure
+- **Course 1: Foundations of Cybersecurity**
+
+
+
+---
+
+## 🎯 Purpose
+This repo serves as:
+- A **study log** of my learning journey.
+- A **portfolio** to showcase hands-on cybersecurity skills.
+- A **reference** for reviewing key concepts.
+
+---
+
+## Certificate
+
