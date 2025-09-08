@@ -24,174 +24,136 @@
 
 ## At a Glance  
 
-- **CISSP’s Eight Security Domains**: Organize cybersecurity work into 8 categories (risk management, asset security, architecture, networks, IAM, testing, operations, software security).  
-- **Key Concepts**: Security posture, InfoSec, least privilege, shared responsibility, defense in depth.  
-- **Threats, Risks, Vulnerabilities**: Threat = harmful event, Risk = likelihood/impact, Vulnerability = weakness exploited by threats.  
-- **Common Issues**: Insider threats, APTs, outdated systems, misconfigurations, phishing, ransomware.  
-- **Risk Management**: Handled using strategies (accept, avoid, transfer, mitigate) and frameworks like **NIST RMF**.  
-- **NIST RMF**: 7 steps (Prepare, Categorize, Select, Implement, Assess, Authorize, Monitor).  
-- **Takeaway**: Security is continuous, proactive, and shared across teams.  
+- Security is split into **8 CISSP domains**.  
+- Core ideas: **security posture**, least privilege, shared responsibility, defense in depth.  
+- **Threat ≠ Risk ≠ Vulnerability** → keep these separate.  
+- Common problems: insider threats, phishing, ransomware, outdated systems.  
+- **Risk management**: accept, avoid, transfer, mitigate.  
+- **NIST RMF**: 7 key steps.  
 
 ---
 
 ## CISSP’s Eight Security Domains  
 
 ### 1. Security and Risk Management  
-- Builds an organization’s **security posture**: ability to defend and respond to change.  
-- Key elements:  
-  - Security goals & objectives  
-  - Risk mitigation processes  
-  - Compliance with regulations  
-  - Business continuity & disaster recovery  
-  - Legal and ethical requirements  
-- **InfoSec**: processes to secure information (incident response, vulnerability management, app/cloud/infrastructure security).  
-- **Example**: Adjusting how PII is treated to comply with GDPR.  
+- Builds overall **security posture**.  
+- Includes risk mitigation, compliance, continuity, and ethics.  
+- **Example**: Updating data handling for GDPR.  
 
 ### 2. Asset Security  
-- Protects **digital and physical assets**: PII, servers, desktops, office space, etc.  
-- Covers storage, maintenance, retention, destruction.  
-- Tools: backups, recovery plans, impact analysis.  
-- **Example**: Creating backups to restore data after an incident.  
+- Protects digital + physical assets.  
+- Backup and recovery = critical.  
+- **Example**: Restoring systems from secure backups.  
 
 ### 3. Security Architecture & Engineering  
-- Ensures systems, tools, and processes protect assets effectively.  
-- **Principles**: shared responsibility, threat modeling, least privilege, defense in depth, fail securely, separation of duties, simplicity, zero trust, trust but verify.  
-- **Example**: Using SIEM tools to flag unusual logins.  
+- Focus: secure design of systems.  
+- Key principles: **least privilege, defense in depth, zero trust**.  
+- **Example**: SIEM alerts on unusual logins.  
 
 ### 4. Communication & Network Security  
-- Secures **physical and wireless networks** (on-site, remote, cloud).  
-- Remote/hybrid work = higher exposure to insecure connections.  
-- Mitigation: VPNs, restricted network access, segmentation.  
-- **Example**: Restricting risky public Wi-Fi access for remote workers.  
+- Secures on-site, remote, and cloud networks.  
+- VPNs + segmentation protect remote workers.  
 
 ### 5. Identity & Access Management (IAM)  
-- Ensures only authorized users have proper access.  
-- Core concept: **principle of least privilege**.  
-- Components: Identification → Authentication → Authorization → Accountability.  
-- **Example**: Granting temporary access for customer service reps, then revoking it.  
+- Ensures proper authentication + authorization.  
+- Based on **least privilege**.  
+- **Example**: Granting temporary access for customer support reps.  
 
 ### 6. Security Assessment & Testing  
-- Identifies and mitigates risks, threats, vulnerabilities.  
-- Methods: penetration testing, control testing, security audits, log analysis.  
-- **Example**: Auditing user permissions to ensure proper levels of access.  
+- Finds weaknesses through testing + audits.  
+- Methods: pen testing, control testing, audits.  
+- **Example**: Reviewing user permissions.  
 
 ### 7. Security Operations  
-- Handles **incident response and prevention**.  
-- Tools & processes: training, awareness, intrusion detection, SIEM, logging, playbooks, forensics, lessons learned.  
-- **Example**: Investigating abnormal after-hours data access.  
+- Handles **incident response** and daily defense.  
+- Tools: SIEM, logging, playbooks, forensics.  
+- **Example**: Investigating suspicious after-hours access.  
 
 ### 8. Software Development Security  
-- Integrates security into the **software development life cycle (SDLC)**.  
-- Secure coding, testing, QA, pen testing.  
-- Security must be built into every stage (design → release).  
-- **Example**: Ensuring encryption is configured properly in a medical device.  
+- Security must be built into the **SDLC**.  
+- Secure coding + QA prevent flaws.  
+- **Example**: Checking encryption in medical software.  
 
 ---
 
 ## Threats, Risks, and Vulnerabilities  
 
-### Definitions  
-- **Threat**: Event/circumstance that could harm assets.  
-- **Risk**: Likelihood + impact of a threat affecting confidentiality, integrity, or availability.  
-- **Vulnerability**: Weakness that can be exploited by a threat.  
+### Threats  
+- **Insider threats**: abuse of access.  
+- **APTs**: long-term hidden access.  
+- **Phishing**: tricking users into revealing info.  
+- **Ransomware**: encrypts data, demands payment.  
 
-### Common Threats  
-- **Insider threats**: Abusing authorized access.  
-- **Advanced persistent threats (APTs)**: Long-term unauthorized access.  
-- **Phishing/social engineering**: Trick users into revealing sensitive info.  
-- **Ransomware**: Encrypts data and demands payment for decryption.  
+### Risks  
+- Chance + impact of a threat on **CIA** (confidentiality, integrity, availability).  
+- Examples:  
+  - **External** (hackers), **Internal** (employees/vendors).  
+  - **Legacy systems**: old, unpatched systems still online.  
+  - **Third-party risks**: vendor access to sensitive data.  
 
-### Common Risks  
-- **External risks**: Threat actors outside the org.  
-- **Internal risks**: Employees, vendors, or trusted partners.  
-- **Legacy systems**: Outdated hardware/software still in use.  
-- **Multiparty risks**: Third-party vendors with access to data.  
-- **Software compliance**: Outdated or noncompliant applications.  
-
-### Common Vulnerabilities  
-- **ProxyLogon**: Exploits Microsoft Exchange.  
-- **ZeroLogon**: Exploits Microsoft Netlogon protocol.  
-- **Log4Shell**: Runs malicious Java code remotely.  
-- **PetitPotam**: Exploits Windows NTLM.  
-- **Security logging failures**: Inadequate monitoring lets attacks go unnoticed.  
-- **Server-side request forgery**: Manipulates server apps to access backend resources.  
+### Vulnerabilities  
+- Weaknesses attackers exploit.  
+- Examples: ProxyLogon, ZeroLogon, Log4Shell, PetitPotam.  
+- Poor logging = blind spots.  
 
 ---
 
 ## Ransomware & the Web Layers  
 
-- **Ransomware**: Encrypts data, locks systems, demands payment for decryption key.  
-- Delivered via phishing, malicious downloads, or exploited vulnerabilities.  
-- Negotiations and leaked data often occur on the **dark web**.  
+- **Ransomware**: locks data → ransom for decryption key.  
+- Often spreads via phishing or unpatched systems.  
 
-### Web Layers  
-1. **Surface web**: Publicly accessible (search engines, websites).  
-2. **Deep web**: Requires authorization (intranets, private databases).  
-3. **Dark web**: Requires special tools (e.g., Tor); often used for illicit activity.  
+**Web layers:**  
+1. **Surface web**: normal public sites.  
+2. **Deep web**: private logins (intranets, databases).  
+3. **Dark web**: hidden networks, often used for illegal data sales.  
 
-### Impacts of Threats  
-- **Financial**: Downtime, fixes, fines.  
-- **Identity theft**: Stolen PII sold/leaked.  
-- **Reputation damage**: Loss of trust, bad press, customer loss.  
+**Impacts:** financial loss, identity theft, reputation damage.  
 
 ---
 
 ## Risk Management  
 
 ### Strategies  
-- **Acceptance**: Live with the risk if cost of mitigation > impact.  
-- **Avoidance**: Eliminate the risk source.  
-- **Transference**: Shift risk to a third party (e.g., insurance, outsourcing).  
-- **Mitigation**: Reduce likelihood or impact.  
+- Accept, Avoid, Transfer, Mitigate.  
 
 ### Frameworks  
-- **NIST RMF** (Risk Management Framework).  
-- **HITRUST** (healthcare-focused).  
-- **OWASP** (publishes Top 10 critical web risks).  
+- **NIST RMF** → main framework.  
+- **HITRUST** → healthcare.  
+- **OWASP Top 10** → biggest web app risks.  
 
 ---
 
 ## NIST Risk Management Framework (RMF)  
 
-1. **Prepare**: Plan ahead, identify risks and controls.  
-2. **Categorize**: Define risk management processes/tasks based on CIA (confidentiality, integrity, availability).  
-3. **Select**: Choose and document controls (e.g., playbooks).  
-4. **Implement**: Put security/privacy plans into action.  
-5. **Assess**: Verify controls are effective.  
-6. **Authorize**: Take accountability, generate reports, plan of action.  
-7. **Monitor**: Continuously track system performance and risks.  
+Steps (memorize order):  
+1. Prepare  
+2. Categorize  
+3. Select  
+4. Implement  
+5. Assess  
+6. Authorize  
+7. Monitor  
 
 ---
 
 ## Key Takeaways  
 
-- Security work is organized into **domains** for clarity and structure.  
-- **Threats, risks, vulnerabilities** are distinct but interconnected.  
-- **Risk management** is proactive and strategic, using frameworks like NIST RMF.  
-- Security must be **continuous and embedded** in systems, operations, and software development.  
-- Cybersecurity is a **shared responsibility** across teams, not just analysts.  
+- **8 CISSP domains** cover all security areas.  
+- Always separate **threats, risks, vulnerabilities**.  
+- **RMF** gives a step-by-step way to handle risk.  
+- Security is ongoing and requires shared responsibility.  
 
 ---
 
 ## Glossary  
 
-- **Assess**: Determine if controls are implemented correctly (Step 5, NIST RMF).  
-- **Authorize**: Being accountable for risks that may exist (Step 6, NIST RMF).  
-- **Business continuity**: Organization’s ability to keep running after disruptions.  
-- **Categorize**: Define processes/tasks for risk management (Step 2, NIST RMF).  
-- **External threat**: Harm from outside actors.  
-- **Implement**: Apply security/privacy plans (Step 4, NIST RMF).  
-- **Internal threat**: Harm from employees, vendors, or trusted partners.  
-- **Monitor**: Track systems to ensure risks are minimized (Step 7, NIST RMF).  
-- **Prepare**: Plan actions to manage risks before a breach (Step 1, NIST RMF).  
-- **Ransomware**: Attack that encrypts data and demands payment.  
-- **Risk**: Anything impacting confidentiality, integrity, or availability of an asset.  
-- **Risk mitigation**: Procedures/rules to reduce risk impact.  
-- **Security posture**: Organization’s ability to defend assets and respond to change.  
-- **Select**: Choose and document controls (Step 3, NIST RMF).  
-- **Shared responsibility**: Everyone plays a role in reducing risk.  
-- **Social engineering**: Manipulating humans to gain unauthorized access.  
-- **Vulnerability**: Weakness that can be exploited by a threat.  
+- **Security posture**: overall defense strength.  
+- **Least privilege**: minimum access needed.  
+- **Zero trust**: never trust, always verify.  
+- **SIEM**: tool for monitoring logs/events.  
+- **Risk mitigation**: reducing likelihood/impact.  
+- **CIA triad**: confidentiality, integrity, availability.  
+- **NIST RMF**: 7-step risk management framework.  
 
 ---
-
