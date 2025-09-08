@@ -12,7 +12,7 @@ It includes summaries, lab notes, and hands on exercises for each course.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 This repo serves as:
 - A **study log** of my learning journey.
 - A **portfolio** to showcase hands-on cybersecurity skills.
