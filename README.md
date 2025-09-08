@@ -7,6 +7,7 @@ It includes summaries, lab notes, and hands on exercises for each course.
 
 ## Structure
 - **Course 1: Foundations of Cybersecurity**
+- **Course 2: Managing Risks**
 
 
 
