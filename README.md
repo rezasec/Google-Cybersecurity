@@ -1,7 +1,7 @@
 # Google Cybersecurity Professional 
 
 This repository documents my progress through the **Google Cybersecurity Professional Certificate** on Coursera.  
-It includes summaries, lab notes, and hands on exercises for each course.
+It includes summaries and lab notes for each course.
 
 ---
 
