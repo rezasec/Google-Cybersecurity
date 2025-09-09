@@ -15,7 +15,7 @@
 ---
 
 ## At a Glance  
-- **Linux** = open-source OS, cornerstone of cybersecurity:contentReference[oaicite:0]{index=0}.  
+- **Linux** = open-source OS, cornerstone of cybersecurity
 - Built from **GNU** (Richard Stallman) + **Linux Kernel** (Linus Torvalds).  
 - Highly customizable → 600+ distributions (“distros”).  
 - Analysts use Linux for:  
@@ -27,7 +27,7 @@
 ---
 
 ## Linux Architecture  
-Components that make up Linux:contentReference[oaicite:1]{index=1}:  
+Components that make up Linux
 - **User**: person initiating tasks; Linux is multi-user.  
 - **Applications**: programs for tasks; installed via **package managers**.  
 - **Shell**: CLI interpreter, translates commands for the kernel.  
@@ -45,10 +45,9 @@ Components that make up Linux:contentReference[oaicite:1]{index=1}:
 ---
 
 ## Linux Distributions  
-Different “flavors” of Linux, each serving a purpose:contentReference[oaicite:2]{index=2}:  
-
+Different “flavors” of Linux, each serving a purpose
 - **Kali Linux™** (Debian-based):  
-  - Built for **penetration testing** & **digital forensics**:contentReference[oaicite:3]{index=3}.  
+  - Built for **penetration testing** & **digital forensics** 
   - Tools: **Metasploit** (exploits), **Burp Suite** (web app testing), **John the Ripper** (password cracking), **tcpdump** & **Wireshark** (traffic analysis), **Autopsy** (forensics).  
   - Best run in a **VM** for safety and rollback.  
 
@@ -72,7 +71,7 @@ Different “flavors” of Linux, each serving a purpose:contentReference[oaicit
 
 ## Package Managers  
 - **Package** = software bundle; may include dependencies.  
-- **Package Manager** = tool to install, update, and remove packages:contentReference[oaicite:4]{index=4}.  
+- **Package Manager** = tool to install, update, and remove packages
 - **Debian-based distros**:  
   - **dpkg** → `.deb` files  
   - **APT (Advanced Package Tool)** → easier CLI tool for installing/searching  
@@ -84,7 +83,7 @@ Different “flavors” of Linux, each serving a purpose:contentReference[oaicit
 ---
 
 ## The Linux Shell  
-- **Shell** = command-line interpreter:contentReference[oaicite:5]{index=5}.  
+- **Shell** = command-line interpreter
 - Allows communication between user & OS.  
 - Executes tasks, runs applications, enables automation.  
 - Different types:  
@@ -95,7 +94,7 @@ Different “flavors” of Linux, each serving a purpose:contentReference[oaicit
 ---
 
 ## Communicating with the Shell  
-- **Command** = instruction to the system:contentReference[oaicite:6]{index=6}.  
+- **Command** = instruction to the system
 - Three possible responses:  
   - **Standard Input (stdin)** – user types command.  
   - **Standard Output (stdout)** – system response (e.g., `echo hello` → outputs `hello`).  
